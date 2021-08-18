@@ -1,7 +1,8 @@
 # yqfkReport
 使用 `GitHub Actions` 自动提交疫情防控通
 > 由于校园网限制 填报时间改为7:11 AM (UTC时间 23:11)（再次拖后一个小时）
-
+>
+> 由于Github将限制`90天`不活跃仓库的Actions,尝试每次Push一个KeepAlive文件到仓库来保持活跃.
 # How to Use
 1. Fork 本仓库(需要GitHub账号)
 2. 进入自己Fork的项目,选择 `Actions` 选项卡, Enable 项目.
