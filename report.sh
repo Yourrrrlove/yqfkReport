@@ -10,7 +10,7 @@ curl 'https://app.upc.edu.cn/uc/wap/login/check' --connect-timeout 3 --retry 3  
   -H 'Referer: https://app.upc.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.upc.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex' \
   -H 'Accept-Language: zh-CN,zh;q=0.9' \
   --data-raw "username=${username}&password=${password}" -c cookie.txt  --compressed
-  content=`curl -b cookie.txt 'https://app.upc.edu.cn/ncov/wap/default/index' --connect-timeout 3 --retry 3 \
+  content=`curl -b cookie.txt 'https://app.upc.edu.cn/ncov/wap/default/index?from=history' --connect-timeout 3 --retry 3 \
   -H 'Connection: keep-alive' -H 'X-Requested-With:XMLHttpRequest'\
   -H 'Cache-Control: max-age=0' \
   -H 'DNT: 1' \
