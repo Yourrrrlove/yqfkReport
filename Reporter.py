@@ -18,7 +18,7 @@ r.get("https://app.upc.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.upc.edu.cn
 print(r.post("https://app.upc.edu.cn/uc/wap/login/check", data={"username": env_dist.get('username'), "password": env_dist.get('password')}).text)
 t = None
 
-t = r.get("https://app.upc.edu.cn/ncov/wap/default/index").json()
+t = r.get("https://app.upc.edu.cn/ncov/wap/default/index?from=history").json()
 
 i = t['d']['oldInfo']
 # print( t['d'])
@@ -27,3 +27,6 @@ i['id'] = t['d']['info']['id']
 i['created'] = t['d']['info']['created']
 its=r.post("https://app.upc.edu.cn/ncov/wap/default/save",data=i).json()
 print(its)
+if(its['e']!=0 and its['m']!='今天已经填报了'):
+    exit(1)
+
