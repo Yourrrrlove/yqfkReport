@@ -13,5 +13,9 @@
 ![image.png](https://i.loli.net/2021/03/23/M7OgRsk3iPCuTFc.png)
 
 当输出中出现 `今日已经填报了` 即登录成功.
+# Notification
+设置在提交出现错误时会发送邮件到`Github`绑定的`Primary Email`地址,依赖于`Github Actions`报错功能,你可以在 `Settings->Notifications`中关闭报错功能.
+
+![image](https://user-images.githubusercontent.com/44310445/138683790-334109cd-49f7-4d12-941f-0130bc99761b.png)
 
 > *注意* 请勿过度依赖本项目 本项目的功能随时可能因为校园网或其他原因失败.
