@@ -1,3 +1,5 @@
+# Achieved. We dont need it ANYMORE.
+---
 # yqfkReport
 使用 `GitHub Actions` 自动提交疫情防控通
 > 由于校园网限制 填报时间改为7:11 AM (UTC时间 23:11)（再次拖后一个小时）
